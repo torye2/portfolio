@@ -29,3 +29,4 @@ git clone https://github.com/torye2/AMGN.git
 cd AMGN
 ./gradlew bootRun   # 환경변수/설정은 코드 레포 문서 참고
 ```
+## 스크린샷
