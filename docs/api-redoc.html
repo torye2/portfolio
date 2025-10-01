@@ -1,4 +1,22 @@
-<!-- docs/api-redoc.html -->
-<!DOCTYPE html><html><head><meta charset="utf-8"/><title>AMGN API</title>
-<script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script></head>
-<body><redoc spec-url="./openapi.yaml"></redoc></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>AMGN API</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+  <style>
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Arial, sans-serif }
+    #redoc-container { height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="redoc-container"></div>
+  <script>
+    // ⚠️ Pages의 프로젝트 사이트는 /<repo-name>/ 접두사가 붙습니다.
+    // 리포 이름이 portfolio면 /portfolio/openapi.yaml 이 절대경로가 됩니다.
+    Redoc.init('/portfolio/openapi.yaml', {}, document.getElementById('redoc-container'));
+  </script>
+  <noscript>JavaScript가 필요합니다.</noscript>
+</body>
+</html>
