@@ -13,8 +13,6 @@
 <body>
   <div id="redoc-container"></div>
   <script>
-    // ⚠️ Pages의 프로젝트 사이트는 /<repo-name>/ 접두사가 붙습니다.
-    // 리포 이름이 portfolio면 /portfolio/openapi.yaml 이 절대경로가 됩니다.
     Redoc.init('/portfolio/openapi.yaml', {}, document.getElementById('redoc-container'));
   </script>
   <noscript>JavaScript가 필요합니다.</noscript>
