@@ -30,3 +30,21 @@ cd AMGN
 ./gradlew bootRun   # 환경변수/설정은 코드 레포 문서 참고
 ```
 ## 스크린샷
+> 아래 경로에 캡처 이미지를 넣고 파일명을 맞춰 주세요.
+>
+> `docs/screenshots/swagger.png`, `docs/screenshots/listing-detail.png`
+>
+> (예: Swagger UI, 상품 상세, MFA 등록)
+
+![Swagger UI](docs/screenshots/swagger.png)
+![상품 상세](docs/screenshots/listing-detail.png)
+
+## 라이선스 & 문의
+- MIT License
+- 문의: <your-email@example.com> 또는 GitHub Issues
+
+## 로드맵
+- [ ] 결제 모듈 실결제 연동
+- [ ] 검색 고도화(카테고리·지역·키워드 복합)
+- [ ] 알림(거래 상태/채팅/팔로우)
+- [ ] CI/CD로 문서 자동 배포
