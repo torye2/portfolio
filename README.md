@@ -5,7 +5,7 @@
 ## 🔗 Quick Links
 - OpenAPI (YAML): [docs/openapi.yaml](docs/openapi.yaml)
 - API 문서 (Redoc, GitHub Pages): https://torye2.github.io/portfolio/api-redoc.html
-- 기능 명세서(Functional Spec): [docs/AMGN_Functional_Spec_v1.0_2025-10-01.md](docs/AMGN_Functional_Spec_from_OpenAPI.md)
+- 기능 명세서(Functional Spec): [docs/AMGN_Functional_Spec_v1.0_2025-10-01.md](docs/AMGN_Functional_Spec_v1.0_2025-10-01.md)
 - 코드 저장소(실행용): https://github.com/torye2/AMGN
 
 ## 개요
