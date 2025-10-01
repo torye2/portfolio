@@ -28,7 +28,7 @@ git clone https://github.com/torye2/AMGN.git
 cd AMGN
 # 환경변수 파일 준비 (.env 참고)
 ./gradlew bootRun
-
+```
 ## 스크린샷
 <!-- 썸네일 2~3장 먼저, 상세는 /docs/images에 저장 -->
 <!--
