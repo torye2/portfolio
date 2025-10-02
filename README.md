@@ -1,6 +1,31 @@
 # AMUGEONA — 중고거래 플랫폼 (Spring Boot + MySQL)
 
-> 이 저장소는 **문서/포트폴리오 레포**입니다. 실행 코드는 별도 저장소에 있어요.
+## Team Overview
+- 인원 5명 / 기간 5주 / 역할 분담
+  - 강효조(팀장): 기획, ERD 설계, Security, Signup, Form Login/Logout, OAuth, MyPage, User, Profile, Admin, Report/Block, Swagger 문서화
+  - 우승우: 주문/결제, 리뷰, uploads
+  - 이상혁: Listing, 채팅, Region, Category, Search, 이달의 판매왕
+  - 김해민: 상점페이지, Follow, 1:1문의, 자주하는질문, header/footer, AWS배포
+  - 박유진: 공지사항
+
+## My Role & Contributions
+- [Auth/MFA] 폼 로그인 → Security/OAuth 전환, TOTP 등록/검증/재인증 플로우
+  - 문제: 기존 폼 로그인과 보안 정책 충돌
+  - 해결: CSRF 쿠키 전략, 세션 재인증 인터셉터, 에러 모델 통일
+  - 효과: 로그인 실패율 ↓, 민감 액션 보안 강화
+  - 증빙: PR #12, #18 / 커밋 1a2b3c / 시퀀스 다이어그램(`/docs/mfa-flow.png`)
+- [Listings] 멀티파트 업로드(사진) + 검색/정렬 + Swagger 스펙 작성
+  - 문제: JSON+파일 혼합 업로드 불안정
+  - 해결: `@RequestPart` 구조, S3 프리사인(또는 로컬) 분리
+  - 효과: 업로드 성공률↑, 문서 신뢰도↑
+  - 증빙: PR #27 / `/docs/openapi.yaml` 해당 섹션
+- [Reports]
+  - 신고-정지-해제 워크플로우
+
+## Other Team Work (Summary)
+- 주문/결제(우승우): 결제 사전등록/완료/취소 플로우 구현  
+- 채팅(이상혁): WebSocket 기반 실시간 채팅
+> 각 파트 코드는 원 저장소 참조. 본 레포에는 **문서/스펙/스크린샷**만 포함.
 
 ## 🔗 Quick Links
 - OpenAPI (YAML): [docs/openapi.yaml](docs/openapi.yaml)
